@@ -1272,7 +1272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 2259154386396958729, guid: b26a90f011a3f49cead13ef04c56234b,
     type: 3}
-  BossEnemyPrefab: {fileID: 5026379090126900985, guid: 07766d380108c4c6ea963987c88235c2,
+  BossEnemyPrefab: {fileID: 3917791883787406289, guid: 07766d380108c4c6ea963987c88235c2,
     type: 3}
 --- !u!4 &1827537619
 Transform:

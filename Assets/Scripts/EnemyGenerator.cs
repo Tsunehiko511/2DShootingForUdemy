@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyGenerator : MonoBehaviour
 {
     public GameObject EnemyPrefab;
+    public GameObject BossEnemyPrefab;
 
     private int random;
 
@@ -12,6 +13,7 @@ public class EnemyGenerator : MonoBehaviour
     void Start()
     {
         InvokeRepeating("Spawn", 2f, 1f);
+        Invoke("BossSpawn", 4f);
     }
 
     // Update is called once per frame
@@ -29,4 +31,11 @@ public class EnemyGenerator : MonoBehaviour
 
         Instantiate(EnemyPrefab, spawnPositon, transform.rotation);
     }
+
+    void BossSpawn()
+    {
+        Instantiate(BossEnemyPrefab, transform.position, transform.rotation);
+        CancelInvoke();
+    }
+
 }
